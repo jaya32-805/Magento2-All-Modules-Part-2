@@ -1,5 +1,5 @@
 <?php
-namespace I95dev\Updateproductstock\Helper;
+namespace Jaya\Updateproductstock\Helper;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
 
