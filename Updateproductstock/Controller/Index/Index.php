@@ -1,10 +1,10 @@
 <?php
 
-namespace I95dev\UpdateProductstock\Controller\Index;
+namespace Jaya\UpdateProductstock\Controller\Index;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
-use I95dev\UpdateProductstock\Helper\Data;
+use Jaya\UpdateProductstock\Helper\Data;
 
 
 class Index extends Action
