@@ -1,0 +1,41 @@
+<form  >
+    <label >select category</label>
+    <select id="form">
+        <option  value='' selected disabled>-- Select category --</option>
+        <option  value='1'>Women</option>
+        <option  value='2'>Men</option>
+        <option  value='3'>Gear</option>
+
+    </select>
+</form>
+<script>
+    require([
+        "jquery",
+        "jquery/ui",
+        'redirectUrl'
+    ], function($){
+
+        $(document).ready(function(){
+            $('#form').change(function() {
+                var some =$("#form option:selected").text();
+                if( some == "Women")
+                {
+                        $("#form").redirectUrl({url: 'http://magen244.com/index.php/women.html'});
+                      //   $.ajax(url:"index.php/women.html")
+
+                }
+                else if( some == "Men")
+                {
+                        $("#form").redirectUrl({url: 'http://magen244/index.php/men.html'});
+
+                }
+
+                else if( some == "Gear")
+                {
+                        $("#form").redirectUrl({url: 'http://magen244.com/index.php/gear.html'});
+
+                }
+            });
+        });
+    });
+</script>
